@@ -1,0 +1,55 @@
+[
+  {
+    "condition": {
+      "operations": [
+        {
+          "comparison_value": "HIGH",
+          "name": "equal_to_case_insensitive"
+        }
+      ],
+      "signal_id": "ATL1",
+      "logical_operation": "any"
+    }
+  },
+  {
+    "condition": {
+      "operations": [
+        {
+          "name": "is_not_in_future"
+        },
+        {
+          "comparison_value": "2017-09-22 05:24:18",
+          "name": "is_after"
+        }
+      ],
+      "signal_id": "ATL10",
+      "logical_operation": "all"
+    }
+  },
+  {
+    "condition": {
+      "operations": [
+
+        {
+          "comparison_value": "81.386",
+          "name": "greater_than_or_equal_to"
+        }
+      ],
+      "signal_id": "ATL6",
+      "logical_operation": "all"
+    }
+  },
+  {
+    "condition": {
+      "operations": [
+
+        {
+          "comparison_value": {"days": 400, "seconds": 77366, "microseconds": 559674 },
+          "name": "is_at_moments_before_now"
+        }
+      ],
+      "signal_id": "ATL9",
+      "logical_operation": "all"
+    }
+  }
+]
